@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Automação TI 360</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Automação TI 360</h1>
+    </div>
+    <span class="success">
+      <strong>Mensagem enviada com sucesso.</strong>
+    </span>
+    <span class="error">
+      <strong>Valide os campos obrigatórios!</strong>
+    </span>
+    <div id="white-background">
+      <form>
+        <fieldset class="group">
+          <div class="field">
+            <label for="firstName"><strong>Nome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="firstName" id="firstName" required />
+          </div>
+          <div class="field">
+            <label for="lastName"><strong>Sobrenome</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="text" name="lastName" id="lastName" required />
+          </div>
+        </fieldset>
+        <fieldset class="group">
+          <div class="field">
+            <label for="email"><strong>E-mail</strong><span class="required-mark"> (obrigatório)</span></label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="phone"><strong>Telefone</strong><span class="phone-label-span required-mark"> (obrigatório)</span></label>
+            <input type="number" name="phone" id="phone" />
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="product"><strong>Qual sua área de interesse?</strong></label>
+          <select id="product">
+            <option selected disabled value="">Selecione</option>
+            <option value="designer">UX/UI</option>
+            <option value="agility">Agilidade</option>
+            <option value="product">Produtos</option>
+            <option value="development">Desenvolvimento</option>
+            <option value="quality">Qualidade</option>
+            <option value="dados">Dados</option>
+          </select>
+        </div>
+        <div id="support-type" class="field">
+          <label><strong>Tipo de atendimento</strong></label>
+          <label>
+            <input type="radio" name="atendimento-ti360" value="desafio" checked />Desafio
+          </label>
+          <label>
+            <input type="radio" name="atendimento-ti360" value="mentoria" />Mentoria
+          </label>
+          <label>
+            <input type="radio" name="atendimento-ti360" value="feedback" />Feedback sobre a trilha
+          </label>
+        </div>
+        <fieldset class="group">
+          <div id="check">
+            <label><strong>Qual seu meio de contato preferencial?</strong></label>
+            <br />
+            <input type="checkbox" id="email-checkbox" name="email" value="email" />
+            <label for="email">E-mail</label>
+            <input type="checkbox" id="phone-checkbox" name="phone" value="phone" />
+            <label for="phone">Telefone</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <br />
+          <label><strong>Como podemos te ajudar?</strong><span class="required-mark"> (obrigatório)</span></label>
+          <textarea row="6" id="open-text-area" name="open-text-area" required></textarea>
+        </div>
+        <div class="field">
+          <label><strong>Adicione um anexo</strong></label>
+          <input id="file-upload" type="file">
+        </div>
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
