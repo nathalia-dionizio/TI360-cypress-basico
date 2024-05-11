@@ -1,5 +1,3 @@
-script.js
-
 let isPhoneRequired = false
 
 const phoneLabelSpan = document.querySelector('.phone-label-span')
